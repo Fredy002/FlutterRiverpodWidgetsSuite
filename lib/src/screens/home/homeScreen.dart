@@ -1,7 +1,6 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/menu/menuItems.dart';
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -42,7 +41,6 @@ class _CustomListTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final colors = Theme.of(context).colorScheme;
 
     return ListTile(
@@ -52,6 +50,10 @@ class _CustomListTitle extends StatelessWidget {
       subtitle: Text(menuItem.subtitle),
       onTap: () {
         // Permite Navegar a otras pantallas
+        /* Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => const ButtonsScreen())); */
+        // otra manera más fácil y rápida (con la implemnetacion en el main)
+        Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
