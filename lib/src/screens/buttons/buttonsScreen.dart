@@ -60,14 +60,44 @@ class _buttonsView extends StatelessWidget {
                 onPressed: () {},
                 icon: const Icon(Icons.backup_table_outlined),
                 label: const Text('Text Button Icon')),
-            // Todo: custom button
             IconButton(
                 onPressed: () {},
                 icon: const Icon(Icons.back_hand_rounded),
                 style: ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll(colors.primary),
                     iconColor: const MaterialStatePropertyAll(Colors.white))),
+            //Boton Personalizado
+            const CustomButton()
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+
+    //redondeamos los bordes
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      //poder modificar los colores
+      child: Material(
+        color: colors.primary,
+        //reacciona con la interaccion del usuario
+        child: InkWell(
+          onTap: (){},
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text(
+              'Holaa!!',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
         ),
       ),
     );
