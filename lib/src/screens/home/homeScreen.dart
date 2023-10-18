@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menuItems.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,7 +12,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Flutter + Material 3'),
         centerTitle: true,
       ),
-      body: _HomeView(),
+      body: const _HomeView(),
     );
   }
 }
@@ -52,8 +53,12 @@ class _CustomListTitle extends StatelessWidget {
         // Permite Navegar a otras pantallas
         /* Navigator.of(context).push(
             MaterialPageRoute(builder: (context) => const ButtonsScreen())); */
+
         // otra manera más fácil y rápida (con la implemnetacion en el main)
-        Navigator.pushNamed(context, menuItem.link);
+        // Navigator.pushNamed(context, menuItem.link);
+
+        //otra manera con el appRouter y cambios en el main
+        context.push(menuItem.link);
       },
     );
   }
