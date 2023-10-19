@@ -1,4 +1,9 @@
+export 'package:widgets_app/src/screens/animated/animatedScrenn.dart';
+export 'package:widgets_app/src/screens/appTutorial/appTutorialScreen.dart';
 export 'package:widgets_app/src/screens/buttons/buttonsScreen.dart';
 export 'package:widgets_app/src/screens/cards/cardsScreen.dart';
 export 'package:widgets_app/src/screens/home/homeScreen.dart';
-
+export 'package:widgets_app/src/screens/infiniteScroll/infiniteScrollScreen.dart';
+export 'package:widgets_app/src/screens/progress/progressScrenn.dart';
+export 'package:widgets_app/src/screens/snackbar/snackbarScrenn.dart';
+export 'package:widgets_app/src/screens/uiControls/uiControlsScreen.dart';

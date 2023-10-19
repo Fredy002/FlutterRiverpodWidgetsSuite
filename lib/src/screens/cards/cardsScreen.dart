@@ -19,15 +19,13 @@ class CardsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Cards Screen')),
-      body: _CardsView(),
+      body: const _CardsView(),
     );
   }
 }
 
 class _CardsView extends StatelessWidget {
-  const _CardsView({
-    super.key,
-  });
+  const _CardsView();
 
   @override
   Widget build(BuildContext context) {
