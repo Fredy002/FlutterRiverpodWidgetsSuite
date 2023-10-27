@@ -30,11 +30,6 @@ class MainApp extends ConsumerWidget {
       //   isDarkMode: isDarkMode,
       // ).getTheme(),
       theme: appTheme.getTheme()
-      /* home: const HomeScreen(),
-      routes: {
-        '/buttons':(context) => const ButtonsScreen(),
-        '/cards':(context) => const CardsScreen()
-      }, */
     );
   }
 }
