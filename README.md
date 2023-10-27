@@ -26,7 +26,7 @@ This project utilizes the following dependencies:
 To get a local copy of the project, you can clone the repository using the following command:
 
 ```bash
-git clone https://github.com/your_username/FlutterRiverpodWidgetsSuite.git
+git clone https://github.com/Fredy002/FlutterRiverpodWidgetsSuite.git
 ```
 
 ## Contributing
